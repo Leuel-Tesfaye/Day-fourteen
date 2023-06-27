@@ -54,4 +54,22 @@ const throwError = () =>{
         console.log(error)
     }
 }
-throwError() 
+// throwError()
+
+// exercising username and email 
+
+const signIn = () =>{
+    let username = prompt('Enter username')
+    let email= prompt('Enter email')
+
+    try {
+        if (username == '') throw 'username is not valid'
+        if(email == '') throw 'Email is not valid'
+        if(username == '' && email == '') throw 'username and email are not valid'
+        username = String(username)
+        email = String(email)
+    } catch (error) {
+        console.log(error)
+    }
+}
+signIn() 
