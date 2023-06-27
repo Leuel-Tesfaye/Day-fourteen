@@ -16,3 +16,25 @@ try {
 } catch (error) {
     console.log(error)
 }
+
+try {
+let fName = 'prince'
+let fullName2 = fName + lastName
+
+} catch (error) {
+    console.error(error)
+}
+finally{
+    console.log('I will be executed no matter what')
+}
+
+try {
+    let lastName = 'Hope'
+    let fullName = firstName + lastName
+} catch (error) {
+    console.log('Name of the error', error.name)
+    console.log('Error message', error.message)
+}
+finally{
+    console.log('I will be executed !!')
+}
