@@ -38,3 +38,20 @@ try {
 finally{
     console.log('I will be executed !!')
 }
+
+// throw : allow us to create a custom error. use the throw statement to throw an exception. 
+
+const throwError = () =>{
+    let message 
+    let x = prompt('Enter a number: ')
+    try {
+        if(x == '') throw 'empty'
+        if(isNaN(x)) throw 'is not a number'
+        x = Number(x)
+        if(x<5) throw 'too low'
+        if(x<10) throw 'too high'
+    } catch (error) {
+        console.log(error)
+    }
+}
+throwError() 
